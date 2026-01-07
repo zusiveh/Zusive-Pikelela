@@ -109,8 +109,8 @@
     <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-icon">
-                <i class="fas fa-shield-alt"></i>
+            <div class="profile-image">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQH6AtNSkaG0qA/profile-displayphoto-shrink_800_800/B4EZqrM2OTKoAc-/0/1763808864062?e=1769644800&v=beta&t=oof1-zwphxm28GR3ajc0hYZ0SKCd47TdKKWUu5pIkxg" alt="Zusive Pikelela">
             </div>
             <h1>Zusive Pikelela</h1>
             <p class="hero-subtitle">
@@ -469,7 +469,9 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h3>Send a Message</h3>
-                    <form class="contact-form" id="contact-form">
+                    <form action="https://formspree.io/f/mvzgeqyz"
+                    method="POST"
+                    class="contact-form" id="contact-form">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="John Doe" required>
@@ -491,7 +493,6 @@
                         </div>
 
                         <button type="submit" class="form-submit">
-                            <i class="fas fa-paper-plane"></i>
                             Send Message
                         </button>
 
