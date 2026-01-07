@@ -78,38 +78,7 @@ if (scrollIndicator) {
     });
 }
 
-// ============================================
-// CONTACT FORM
-// ============================================
-const contactForm = document.getElementById('contact-form');
-const formSuccess = document.getElementById('form-success');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Create mailto link
-    const mailtoLink = `mailto:pikelelazusive7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message
-    contactForm.style.display = 'none';
-    formSuccess.style.display = 'block';
-    
-    // Reset form after 5 seconds
-    setTimeout(() => {
-        contactForm.style.display = 'block';
-        formSuccess.style.display = 'none';
-        contactForm.reset();
-    }, 5000);
-});
 
 // ============================================
 // IMAGE MODAL / ZOOM FUNCTIONALITY
